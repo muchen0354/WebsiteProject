@@ -30,7 +30,7 @@
       height: 548px;
     }
     .view1{
-      background-image: url('imgs/banner_01.png');
+      background-image: url('/static/imgs/banner_01.png');
       .banner-title{
         color: #fff;
         font-size: 60px;
@@ -68,13 +68,13 @@
       }
     }
     .view2{
-      background-image: url('imgs/banner_wg.png');
+      background-image: url('/static/imgs/banner_wg.png');
     }
     .view3{
-      background-image: url('imgs/banner_dzbq.png');
+      background-image: url('/static/imgs/banner_dzbq.png');
     }
     .view4{
-      background-image: url('imgs/banner_zndd.png');
+      background-image: url('/static/imgs/banner_zndd.png');
     }
   }
 

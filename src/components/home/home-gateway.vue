@@ -8,7 +8,7 @@
               <span>智能终端</span>
             </div>
             <div class="banner-right pull-right">
-              <img src="./imgs/banner_wg_img.png" alt="">
+              <img src="/static/imgs/banner_wg_img.png" alt="">
             </div>
           </div>
         </div>
@@ -110,7 +110,7 @@
       width: 100%;
       height: 420px;
       padding-top: 128px;
-      background-image: url('./imgs/banner_wg.png');
+      background-image: url('/static/imgs/banner_wg.png');
       .banner-content{
         width: 800px;
         height: 285px;

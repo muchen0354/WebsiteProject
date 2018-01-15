@@ -109,7 +109,7 @@
     width: 100%;
     height: 420px;
     padding-top: 88px;
-    background-image: url('./imgs/banner_dzbq.png');
+    background-image: url('/static/imgs/banner_dzbq.png');
     .banner-title{
       margin: 0 auto;
       margin-bottom: 46px;

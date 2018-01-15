@@ -4,9 +4,9 @@
         <div class="banner-title1">全球领先的电子围栏技术</div>
         <div class="banner-introduce"><span>平衡&nbsp;</span>规范停放与用户体验,<span>&nbsp;自研&nbsp;</span>技术, 拥有 <span>&nbsp;10多&nbsp;</span>项专利</div>
         <div class="banner-achievement clearfix">
-          <div class="achievement-one"><img src="./imgs/banner_icon.png" alt=""><span>多个城市独家运营</span></div>
-          <div class="achievement-two"><img src="./imgs/banner_icon.png" alt=""><span>建设停车位&nbsp; 10000+</span></div>
-          <div class="achievement-three"><img src="./imgs/banner_icon.png" alt=""><span>累计实现单车停放 &nbsp;1亿次</span></div>
+          <div class="achievement-one"><img src="/static/imgs/banner_icon.png" alt=""><span>多个城市独家运营</span></div>
+          <div class="achievement-two"><img src="/static/imgs/banner_icon.png" alt=""><span>建设停车位&nbsp; 10000+</span></div>
+          <div class="achievement-three"><img src="/static/imgs/banner_icon.png" alt=""><span>累计实现单车停放 &nbsp;1亿次</span></div>
         </div>
       </div>
         <div class="container">
@@ -132,7 +132,7 @@
       }
     },
     mounted () {
-      // console.log(this)
+      this.imgPreLoad()
     },
     methods: {
       // moveLeft () {
@@ -143,6 +143,25 @@
       //   this.isShow = 'left'
       //   Velocity(this.$refs.myCarousel, {marginLeft: 0}, {duration: 500})
       // },
+      imgPreLoad () {
+        var images = []
+        function preload () {
+          for (let i = 0; i < preload.arguments.length; i++) {
+            images[i] = new Image()
+            images[i].src = preload.arguments[i]
+          }
+        }
+        preload(
+          '/static/imgs/banner01_1.png',
+          '/static/imgs/banner_zns.png',
+          '/static/imgs/banner_zndd.png',
+          '/static/imgs/banner_dzbq.png',
+          '/static/imgs/banner03.png',
+          '/static/imgs/dzbq_img02.png',
+          '/static/imgs/banner_wg.png',
+          '/static/imgs/banner_01.png'
+        )
+      },
       goNextPage (path) {
         this.$router.push(path)
       },
@@ -168,7 +187,7 @@
     .view1{
       width: 100%;
       height: 548px;
-      background-image: url('./imgs/banner_01.png');
+      background-image: url('/static/imgs/banner_01.png');
     .banner-title1{
       color: #fff;
       font-size: 60px;
@@ -373,21 +392,21 @@
           }
           >li:nth-child(1){
             left: 0;
-            background-image: url('./imgs/img_01.png');
+            background-image: url('/static/imgs/img_01.png');
             .tag-title{
               color: #a46f24;
             }
           }
           >li:nth-child(2){
             left: 276px;
-            background-image: url('./imgs/img_02.png');
+            background-image: url('/static/imgs/img_02.png');
             .tag-title{
               color: #3880c8;
             }
           }
           >li:nth-child(3){
             left: 551px;
-            background-image: url('./imgs/img_03.png');
+            background-image: url('/static/imgs/img_03.png');
             .tag-title{
               color: #6062a7;
             }
