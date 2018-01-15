@@ -128,23 +128,10 @@
             path: '/home/lock'
           }
         ],
-        isShow: 'left',
-        images: [
-          '/static/imgs/banner01_1.png',
-          '/static/imgs/banner_zns.png',
-          '/static/imgs/banner_zndd.png',
-          '/static/imgs/banner_dzbq.png',
-          '/static/imgs/banner03.png',
-          '/static/imgs/dzbq_img02.png',
-          '/static/imgs/banner_wg.png',
-          '/static/imgs/banner_01.png',
-          '/static/imgs/banner_wg_img.png',
-          '/static/img/banner_dzbq_img.d812e1a.png'
-        ]
+        isShow: 'left'
       }
     },
     mounted () {
-      this.imgPreLoad()
     },
     methods: {
       // moveLeft () {
@@ -155,12 +142,6 @@
       //   this.isShow = 'left'
       //   Velocity(this.$refs.myCarousel, {marginLeft: 0}, {duration: 500})
       // },
-      imgPreLoad () {
-        this.images.forEach(item => {
-          let img = new Image()
-          img.src = item
-        })
-      },
       goNextPage (path) {
         this.$router.push(path)
       },
