@@ -1,7 +1,7 @@
 <template>
   <div id="qicaiapp">
     <div class="downloadbtn">
-      <a class="download-app" href="http://www.zriot.net/seven_color/ios">点击下载电子围栏App iOS版</a>
+      <a class="download-app" download="elicense.ipa" href="http://www.zriot.net/seven_color/ios/elicense.ipa">点击下载电子围栏App iOS版</a>
     </div>
   </div>
 </template>
@@ -37,6 +37,8 @@
         cursor: pointer;
         width: 300px;
         height: 50px;
+        color: blue;
+        text-decoration: underline;
         /*border: 1px solid #000;*/
       }
     }
