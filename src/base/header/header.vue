@@ -54,6 +54,7 @@
         this.images.forEach(item => {
           let img = new Image()
           img.src = item
+          console.log(img.complete)
         })
       },
       change (index, path) {

@@ -17,6 +17,10 @@ import Case from '@/components/case/case'
 // about
 import About from '@/components/about/about'
 
+// download
+import qicai from '@/components/download/qicai'
+import Israel from '@/components/download/Israel'
+
 Vue.use(Router)
 
 export default new Router({
@@ -60,6 +64,16 @@ export default new Router({
       path: '/about',
       name: 'about',
       component: About
+    },
+    {
+      path: '/qicai',
+      name: 'qicai',
+      component: qicai
+    },
+    {
+      path: '/Israel',
+      name: 'Israel',
+      component: Israel
     }
   ]
 })
